@@ -18,14 +18,10 @@
     "ejs": "^3.1.10",
     "email-validator": "^2.0.4",
     "express": "^4.21.1",
-    "mongoose": "^8.8.1",
-    "mysql": "^2.18.1",
-    "mysql2": "^3.11.4"
+    "mongoose": "^8.8.1"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.20",
     "nodemon": "^3.1.7",
-    "postcss": "^8.4.49",
     "tailwindcss": "^3.4.14"
   }
 }
