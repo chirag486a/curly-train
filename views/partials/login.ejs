@@ -1,0 +1,29 @@
+<section class="p-16 space-y-12 border rounded-xl w-fit">
+    <h2 class="text-5xl text-center font-inter">Login</h2>
+    <form id="loginForm" class="flex flex-col gap-8 h-fit rounded-xl w-[512px]">
+        <div id="errorMessage" class="text-red-700"></div>
+        <div class="w-full">
+            <input class="w-full p-3 border-none rounded-lg bg-slate-200"
+                type="email" placeholder="Email" name="email" id="email" />
+        </div>
+        <div class="w-full">
+            <input class="w-full p-3 border-none rounded-lg bg-slate-200"
+                type="password" placeholder="Password" name="password"
+                id="password" />
+        </div>
+        <div class="w-full space-y-3">
+            <button type="submit"
+                class="w-full p-3 text-white bg-black rounded-lg">Login</button>
+            <p class="text-center">
+                <a href="/register" class="text-gray-700 underline">Don't have an
+                    account?</a>
+            </p>
+            <p class="text-center">
+                <a href="/forgetPassword" class="text-gray-700 underline">Forget
+                    Password?</a>
+            </p>
+        </div>
+    </form>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/dompurify@3.0.1/dist/purify.min.js">
+</script>
