@@ -1,32 +1,38 @@
-<section class="p-16 space-y-12 border rounded-xl w-fit">
-    <h2 class="text-5xl text-center font-inter">Sign In</h2>
+<section
+    class="p-16 space-y-12 border border-none shadow-sm rounded-xl w-fit bg-pink-400/80 shadow-pink-900/50">
+    <h2 class="text-5xl text-center font-inter text-pink-950">Sign In</h2>
     <div id="errorMessage" class="text-red-700"></div>
-    <form class="flex flex-col gap-8 h-fit w-[512px] rounded-xl" action="/register" method="Post" id="registerForm">
+    <form class="flex flex-col gap-8 h-fit w-[512px] rounded-xl"
+        action="/register" method="Post" id="registerForm">
         <div class="flex gap-2">
-            <input class="w-full p-3 border-none rounded-lg bg-slate-200" name="firstName" type="text"
-                placeholder="First Name" id="firstName">
-            <input class="w-full p-3 border-none rounded-lg bg-slate-200" name="lastName" type="text"
-                placeholder="Last Name" id="lastName">
+            <input class="w-full p-3 bg-pink-100 border-none rounded-lg"
+                name="firstName" type="text" placeholder="First Name"
+                id="firstName">
+            <input class="w-full p-3 bg-pink-100 border-none rounded-lg"
+                name="lastName" type="text" placeholder="Last Name"
+                id="lastName">
         </div>
         <div class="w-full">
-            <input class="w-full p-3 border-none rounded-lg bg-slate-200" name="email"
-                type="email" placeholder="Email" id="email">
+            <input class="w-full p-3 bg-pink-100 border-none rounded-lg"
+                name="email" type="email" placeholder="Email" id="email">
         </div>
         <div class="flex gap-2 after:text-red-950">
-            <input class="w-full p-3 border-none rounded-lg bg-slate-200" name="password"
-                type="password" placeholder="Password" id="password">
-            <input class="w-full p-3 border-none rounded-lg bg-slate-200" name="confirmPassword"
-                type="password" placeholder="Confirm Password" id ="confirmPassword">
+            <input class="w-full p-3 bg-pink-100 border-none rounded-lg"
+                name="password" type="password" placeholder="Password"
+                id="password">
+            <input class="w-full p-3 bg-pink-100 border-none rounded-lg"
+                name="confirmPassword" type="password"
+                placeholder="Confirm Password" id="confirmPassword">
         </div>
         <div class="w-full space-y-3">
             <button type="submit"
-                class="w-full p-3 text-white bg-black rounded-lg ">Create</button>
+                class="w-full p-3 rounded-lg text-pink-50 bg-pink-950 ">Create</button>
             <p class="text-center">
-                <a href="/login" class="text-gray-700 underline">Already have
+                <a href="/login" class="text-pink-800 underline">Already have
                     an account?</a>
             </p>
         </div>
     </form>
 </section>
-
-<script src="https://cdn.jsdelivr.net/npm/dompurify@3.0.1/dist/purify.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dompurify@3.0.1/dist/purify.min.js">
+</script>

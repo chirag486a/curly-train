@@ -104,10 +104,7 @@ app.post("/login", async (req, res) => {
 app.get("/dashboard", async (req, res) => {
   console.log(req.cookies.userId);
   if (!req.cookies.userId) {
-    res.render("index", {
-      partial: "welcome",
-      title: "Welcome",
-    });
+    res.redirect('/');
     return;
   }
   const currentUser =  await User.findById(req.cookies.userId);
@@ -121,11 +118,8 @@ app.get("/dashboard", async (req, res) => {
 });
 
 app.get("/logout", (req, res) => {
-  res.clearCookie();
-  res.render("index", {
-    partial: "welcome",
-    title: "Welcome to Dashboard",
-  })
+  res.clearCookie('userId');
+  res.redirect('/');
   
 })
 
